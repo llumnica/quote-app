@@ -1,0 +1,23 @@
+.quotesBox{
+    margin: 10px;
+}
+
+.card-title{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_details{
+    display: flex!important;
+    margin: auto!important;
+}
+
+.card-body{
+    background-color: #b3b3b3!important;
+}
