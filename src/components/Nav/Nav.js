@@ -28,7 +28,7 @@ export default class Example extends React.Component {
         <Navbar color="light" light expand="md" className='navabr container-fluid'>
           <NavbarBrand tag={Link}  to="/">Quotes App</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar className="d-flex justify-content-end">
+          <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink tag={Link}  to="/">Home</NavLink>
