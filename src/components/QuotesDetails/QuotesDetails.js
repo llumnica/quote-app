@@ -11,7 +11,7 @@ export default function QuotesDetails() {
   let params = useParams();
 
   const config = {
-    headers: { Authorization: "Bearer 20f63fed3e1e7cca24224174cffb0a2d" },
+    headers: { 'Authorization': "Bearer 20f63fed3e1e7cca24224174cffb0a2d" }
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function QuotesDetails() {
     let isQuoteInList = quotes.findIndex(
       (element) => element.id === quoteDetails?.id
     );
-    if (isQuoteInList === -1) {
+    if (isQuoteInList == -1) {
       toast.success("Quote was added to your favourite list");
       localStorage.setItem("quotes", JSON.stringify([...quotes, quoteDetails]));
     } else {
