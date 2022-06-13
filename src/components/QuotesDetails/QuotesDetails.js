@@ -10,13 +10,13 @@ export default function QuotesDetails() {
 
   let params = useParams();
 
-  const config = {
-    headers: { 'Authorization': "Bearer 20f63fed3e1e7cca24224174cffb0a2d" }
-  };
+  // const config = {
+  //   headers: { 'Authorization': "Bearer 20f63fed3e1e7cca24224174cffb0a2d" }
+  // };
 
   useEffect(() => {
     axios
-      .get(`https://favqs.com/api/quotes/${params.id}`, config)
+      .get(`https://favqs.com/api/quotes/${params.id}`, { headers:{"Authorization" : `Bearer 20f63fed3e1e7cca24224174cffb0a2d`} })
       .then((res) => {
         console.log(res);
         setQuoteDetails(res.data);
