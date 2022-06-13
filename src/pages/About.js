@@ -1,15 +1,6 @@
 import React from "react";
 import {
-  Container,
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  Row,
-  Col,
-  CardFooter,
-  CardBody,
-  CardHeader,
+  Container
 } from "reactstrap";
 
 export default function About() {

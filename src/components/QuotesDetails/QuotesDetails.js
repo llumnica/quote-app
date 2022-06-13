@@ -35,7 +35,7 @@ export default function QuotesDetails() {
     let isQuoteInList = quotes.findIndex(
       (element) => element.id === quoteDetails?.id
     );
-    if (isQuoteInList == -1) {
+    if (isQuoteInList === -1) {
       toast.success("Quote was added to your favourite list");
       localStorage.setItem("quotes", JSON.stringify([...quotes, quoteDetails]));
     } else {
